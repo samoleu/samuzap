@@ -2,20 +2,19 @@ import React from "react";
 import Image from "next/image";
 import HeroImage from "@/../public/girl-coding.svg";
 import logo from "@/../public/komunicatte-logo.svg";
-import { useAuth } from "@clerk/nextjs";
-import SignInBtn from "@/components/SignInBtn";
+import { SignInButton, useAuth } from "@clerk/nextjs";
 
 const page = () => {
   return (
     <>
-      <div className="flex flex-col items-center min-h-screen w-screen bg-gradient-to-b from-[#9a94d5] to-[#DDDBFF] bg-opacity-60">
+      <div className="flex flex-col items-center h-screen w-screen bg-gradient-to-b from-[#9a94d5] to-[#DDDBFF] bg-opacity-60">
         <main className="2xl:w-[96rem] xl:w-[80rem] lg:w-[64rem] md:w-[48rem] sm:w-[40rem] w-full h-full flex flex-col items-center px-8 mt-4">
           <section className="flex justify-between items-center px-8 w-full">
             <div className="flex items-center space-x-4">
               <Image src={logo} alt="Komunicatte logo" width={50} height={50} className="object-contain"/>
               <h1 className="text-4xl font-bold text-black leading-tight">Komunicatte</h1>
             </div>
-            <SignInBtn />
+            <SignInButton />
           </section>
           <section className="flex justify-between items-center w-full h-screen px-8">
             <div className="flex flex-col flex-wrap gap-6 max-w-[50%]">
