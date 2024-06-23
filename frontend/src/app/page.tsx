@@ -4,6 +4,7 @@ import HeroImage from "@/../public/girl-coding.svg";
 import logo from "@/../public/komunicatte-logo.svg";
 import { SignInButton, useAuth } from "@clerk/nextjs";
 
+
 const page = () => {
   return (
     <>
@@ -28,11 +29,11 @@ const page = () => {
                 dedicated profiles for work and personal use, promising
                 an experience that's not just better than WhatsApp.
               </p>
-              <button className="bg-black rounded-lg px-4 py-2 font-bold">
+              <button className="bg-black rounded-lg px-4 py-2">
                 Get Started
               </button>
             </div>
-            <Image src={HeroImage} alt="Hero Image" width={500} height={500} className="object-contain"/>
+            <Image src={HeroImage} alt="Hero Image" width={400} height={400} />
           </section>
         </main>
       </div>
